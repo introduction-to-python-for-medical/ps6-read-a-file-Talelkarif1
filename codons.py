@@ -1,6 +1,7 @@
 def create_codon_dict(file_path):
    file = open(file_path)
     rows = file.readlines()
+    file.close()
     d = {}
     for row in rows:
         cells = row.strip().split('\t')
